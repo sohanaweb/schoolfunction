@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banandnav{
+    /* width: 100%; */
+    height: auto;
+}
+header{
+
+   display: flex; 
+   justify-content: space-between; 
+            align-items: center;
+          
+            
+          
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav {
+display: flex;
+justify-content: space-between;
+list-style: none;
+
+
+}
+.navlist{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 30px;
+}
+
+#iconbar{
+    display: none;
+}
+#Home{
+    color: orange;
+}
+#ab{
+    color: cyan;
+}
+#fa{
+    color: blueviolet;
+}
+#ad{
+    color: chartreuse;
+}
+#empow{
+    color: rgb(244, 167, 113);
+}
+#impo{
+    color:rgb(117, 117, 245);
+}
+.contactbtn{
+    background-color: orange;
+    border: none;
+    border-radius: 14px;
+    margin-left: 20px;
+    color: white;
+width: 120px;
+height: 40px;
+}
+
+.banner{
+    display: flex; 
+    align-items: center;
+    
+    justify-content: center;
+
+}
+.bantext{
+  
+  margin-top: 20px;
+  align-items: center;
+ 
+}
+.banimage img{
+    width: 90%;
+    margin-left: 20px;
+    height: auto;
+   
+}
+.banandnav{
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+    justify-items: center; */
+}
+.curriculumsection h1{
+margin-bottom: 10px;
+}
+.btnban{
+    background-color: black;
+    color: white;
+    
+    border: none;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 90px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:500px){
+    #iconbar{
+        display: inline;
+    }
+    nav,
+    #logotext,
+    .contactbtn{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    header{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+        border: 1px solid orange;  
+    }
+    .bantext{
+        justify-items: center;
+        text-align: center;
+    }
+}
+/* start of part  o3 standerd curriculam*/
+body{
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+
+
+}
+.curriculumsection{
+    text-align: center;
+            margin: 50px auto;
+            max-width: 1400px;
+}
+.curriculumsection h2{
+    font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    max-width: 30%;
+    background: linear-gradient(135deg, #f7f7f7, #fff);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    
+}
+/* Unique gradients for each card */
+.card:nth-child(1) {
+    background: linear-gradient(1deg, #fbfbfb, #b4e8f8);
+}
+.card:nth-child(2) {
+    background: linear-gradient(1deg, #f6f5f1, #feeac1);
+}
+.card:nth-child(3) {
+    background: linear-gradient(1deg, #f8f7f8, #eeccfb);
+}
+.arrow-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+.arrow-buttons button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffa500;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 4px, 4px, rgba(0, 0, 0, 0.25));
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.arrow-buttons button:hover {
+    background-color: #e69500;
+    transform: scale(1.1);
+}
+.card a{
+    text-decoration: none;
+}
+#redmore2{
+    color:orange;
+}
+#redmore1{
+    color: rgb(135, 172, 240);
+}
+#redmore3{
+color: rgb(237, 71, 190);
+}
+/* /* lets rewsponse it * */
+@media screen and (max-width:500px){
+    .card{
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .curriculum-section h2 {
+        font-size: 2rem;
+    }
+    .arrow-buttons{
+        display: none;
+    }
+}
+
+
+/* end of curiculum section */
+.stories-section{
+    background: linear-gradient(to bottom, #faf0e6, #fac58f);
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+   
+
+}
+
+.stories-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+.storycards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.storycard{
+    background: #fff;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+           
+            transition: transform 0.3s ease;
+}
+#item1{
+grid-row: span 2;
+}
+.storycard:hover {
+    transform: translateY(-10px);
+}
+.storycard img {
+    width: 100%;
+    height: auto;
+}
+.btn1{
+    background-color: rgb(106, 232, 60);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    margin-top: -150px;
+    margin-left: 20px;
+    text-align: center;
+}
+.btn2{
+    background-color: rgba(60, 216, 232, 1);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    margin-top: -30px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.btn3{
+    background-color: rgb(232, 163, 60);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    padding: 10px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+.btn4{
+    background-color: rgb(232, 60, 218);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    padding: 10px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+
+.btn5{
+    background-color: rgb(60, 201, 232);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    margin-top: -30px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.card-content {
+    padding: 20px;
+}
+.storycard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.storycard p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.view-all:hover {
+    background-color: #333;
+}
+@media screen and (max-width:500px){
+    .storycards{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+    #item1{
+        display: none;
+    }
+}
+
+
+/* Footeert design */
+.footer {
+    background-color: cornflowerblue;
+    color: #0c0101;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.logo-section img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.logo-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-links ul li {
+    margin-bottom: 10px;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: #0e0e0e;
+    font-size: 0.9rem;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons img {
+    display: inline-block;
+    background-color: #080808;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4aa1f3;
+    font-size: 1rem;
+}
+.social-icons a:hover {
+    background-color: #333;
+    color: #101010;
+}
+@media (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+        
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+
+  
+}
